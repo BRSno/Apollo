@@ -32,7 +32,7 @@ pipeline {
       steps {
         echo 'deploy in prod'
         snDevOpsStep(enabled: true, ignoreErrors: true)
-        snDevOpsChange()
+        snDevOpsChange(ignoreErrors: true)
       }
     }
 
